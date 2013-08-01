@@ -1,0 +1,5 @@
+Vagrant::Config.run do |config|
+  config.vm.box = "teambition-redis"
+  config.vm.box_url = "../src/teambition-redis.box"
+  config.vm.forward_port 6379, 6379
+end
